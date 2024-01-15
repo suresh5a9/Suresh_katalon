@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify status code using groovy script</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>aae50e8d-c4d1-4b15-9171-972e4888ef19</testCaseGuid>
+</TestCaseEntity>

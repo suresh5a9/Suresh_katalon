@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify the status code of Get response</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>054d3d22-fd2b-46bd-a8e5-834e3e40addd</testCaseGuid>
+</TestCaseEntity>
