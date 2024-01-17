@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Verify UI specs of login page</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>99f32884-6f50-4b27-9416-8ef169087355</testCaseGuid>
+</TestCaseEntity>
