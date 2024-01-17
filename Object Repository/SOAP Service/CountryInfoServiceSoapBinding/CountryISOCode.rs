@@ -29,7 +29,7 @@
    &lt;soapenv:Header/>
    &lt;soapenv:Body>
       &lt;web:CountryISOCode>
-         &lt;web:sCountryName>India&lt;/web:sCountryName>
+         &lt;web:sCountryName>${CountryName}&lt;/web:sCountryName>
       &lt;/web:CountryISOCode>
    &lt;/soapenv:Body>
 &lt;/soapenv:Envelope></soapBody>
@@ -39,6 +39,13 @@
    <soapServiceFunction>CountryISOCode</soapServiceFunction>
    <socketTimeout>0</socketTimeout>
    <useServiceInfoFromWsdl>false</useServiceInfoFromWsdl>
+   <variables>
+      <defaultValue>'Malaysia'</defaultValue>
+      <description></description>
+      <id>658a99e2-2139-402d-a00a-58e6cb4d7dba</id>
+      <masked>false</masked>
+      <name>CountryName</name>
+   </variables>
    <verificationScript>import static org.assertj.core.api.Assertions.*
 
 import com.kms.katalon.core.testobject.RequestObject

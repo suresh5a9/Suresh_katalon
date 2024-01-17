@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<TestCaseEntity>
+   <description></description>
+   <name>Parameterisation of SOAP APIs</name>
+   <tag></tag>
+   <comment></comment>
+   <testCaseGuid>63943f6d-3341-4cc5-ae37-5c2dad1ffb8c</testCaseGuid>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>c34255fb-e457-4e84-9069-6ef15e5349a7</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>a7d07d84-3b43-4765-a5bd-b29b3797586e</variableId>
+   </variableLinks>
+   <variableLinks>
+      <testDataLinkId></testDataLinkId>
+      <type>DEFAULT</type>
+      <value></value>
+      <variableId>7ad010b6-6794-420f-89a4-8ed57e7923db</variableId>
+   </variableLinks>
+   <variable>
+      <defaultValue>'India\t'</defaultValue>
+      <description></description>
+      <id>c34255fb-e457-4e84-9069-6ef15e5349a7</id>
+      <masked>false</masked>
+      <name>CountryName</name>
+   </variable>
+   <variable>
+      <defaultValue>'IN'</defaultValue>
+      <description></description>
+      <id>a7d07d84-3b43-4765-a5bd-b29b3797586e</id>
+      <masked>false</masked>
+      <name>ISO</name>
+   </variable>
+   <variable>
+      <defaultValue>'INR'</defaultValue>
+      <description></description>
+      <id>7ad010b6-6794-420f-89a4-8ed57e7923db</id>
+      <masked>false</masked>
+      <name>CurrencyCode</name>
+   </variable>
+</TestCaseEntity>
