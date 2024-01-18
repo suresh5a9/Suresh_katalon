@@ -1,0 +1,81 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "line": 11,
+        "name": "Test login with valid credentails",
+        "description": "",
+        "id": "login-feature;test-login-with-valid-credentails;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7635698200,
+              "status": "passed"
+            },
+            "line": 4,
+            "name": "User navigates to Login page",
+            "match": {
+              "location": "Steps.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1877307300,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User enters John Doe and ThisIsNotAPassword",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Doe",
+                  "offset": 12
+                },
+                {
+                  "val": "ThisIsNotAPassword",
+                  "offset": 25
+                }
+              ],
+              "location": "Steps.enterUsername(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1282709300,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "clicks on login button",
+            "match": {
+              "location": "Steps.Click()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3641600,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user is navigated to home page",
+            "match": {
+              "location": "Steps.homepage()"
+            },
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "Login feature",
+    "description": "",
+    "id": "login-feature",
+    "keyword": "Feature",
+    "uri": "Include/features/Login.feature",
+    "tags": []
+  }
+]
