@@ -11,7 +11,7 @@
    </GlobalVariableEntity>
    <GlobalVariableEntity>
       <description></description>
-      <initValue>''</initValue>
+      <initValue>'US'</initValue>
       <name>ISO_code</name>
    </GlobalVariableEntity>
 </GlobalVariableEntities>

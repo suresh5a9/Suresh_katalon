@@ -17,3 +17,9 @@ import com.kms.katalon.core.windows.keyword.WindowsBuiltinKeywords as Windows
 import internal.GlobalVariable as GlobalVariable
 import org.openqa.selenium.Keys as Keys
 
+response = WS.sendRequest(findTestObject('SOAP Service/CountryInfoServiceSoapBinding/CountryISOCode', [('CountryName') : 'Malaysia']))
+
+ISO = WS.getElementPropertyValue(response, 'CountryISOCodeResponse.CountryISOCodeResult')
+
+WS.sendRequest(findTestObject('SOAP Service/CountryInfoServiceSoapBinding/CountryCurrency', [('ISO') : ISO]))
+
