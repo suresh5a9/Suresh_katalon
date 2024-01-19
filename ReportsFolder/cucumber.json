@@ -1,9 +1,9 @@
 [
   {
-    "line": 1,
+    "line": 2,
     "elements": [
       {
-        "line": 11,
+        "line": 13,
         "name": "Test login with valid credentails",
         "description": "",
         "id": "login-feature;test-login-with-valid-credentails;;2",
@@ -12,10 +12,10 @@
         "steps": [
           {
             "result": {
-              "duration": 7635698200,
+              "duration": 7286421500,
               "status": "passed"
             },
-            "line": 4,
+            "line": 6,
             "name": "User navigates to Login page",
             "match": {
               "location": "Steps.navigateToLoginPage()"
@@ -24,10 +24,10 @@
           },
           {
             "result": {
-              "duration": 1877307300,
+              "duration": 367068500,
               "status": "passed"
             },
-            "line": 5,
+            "line": 7,
             "name": "User enters John Doe and ThisIsNotAPassword",
             "match": {
               "arguments": [
@@ -46,10 +46,10 @@
           },
           {
             "result": {
-              "duration": 1282709300,
+              "duration": 841048600,
               "status": "passed"
             },
-            "line": 6,
+            "line": 8,
             "name": "clicks on login button",
             "match": {
               "location": "Steps.Click()"
@@ -58,15 +58,99 @@
           },
           {
             "result": {
-              "duration": 3641600,
+              "duration": 3252800,
               "status": "passed"
             },
-            "line": 7,
+            "line": 9,
             "name": "user is navigated to home page",
             "match": {
               "location": "Steps.homepage()"
             },
             "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@Valid_Scenario"
+          }
+        ]
+      },
+      {
+        "line": 24,
+        "name": "Test login with valid credentails",
+        "description": "",
+        "id": "login-feature;test-login-with-valid-credentails;;2",
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 7064570200,
+              "status": "passed"
+            },
+            "line": 17,
+            "name": "User navigates to Login page",
+            "match": {
+              "location": "Steps.navigateToLoginPage()"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 331984200,
+              "status": "passed"
+            },
+            "line": 18,
+            "name": "User enters John Doe and password",
+            "match": {
+              "arguments": [
+                {
+                  "val": "John Doe",
+                  "offset": 12
+                },
+                {
+                  "val": "password",
+                  "offset": 25
+                }
+              ],
+              "location": "Steps.enterUsername(String,String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 747426600,
+              "status": "passed"
+            },
+            "line": 19,
+            "name": "clicks on login button",
+            "match": {
+              "location": "Steps.Click()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 115145300,
+              "status": "passed"
+            },
+            "line": 20,
+            "name": "Error message is displayed",
+            "match": {
+              "location": "Steps.Loginerror()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@Login"
+          },
+          {
+            "name": "@invalid_scenario"
           }
         ]
       }
@@ -76,6 +160,15 @@
     "id": "login-feature",
     "keyword": "Feature",
     "uri": "Include/features/Login.feature",
-    "tags": []
+    "tags": [
+      {
+        "name": "@Login",
+        "type": "Tag",
+        "location": {
+          "line": 1,
+          "column": 1
+        }
+      }
+    ]
   }
 ]
