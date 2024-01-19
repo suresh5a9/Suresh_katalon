@@ -46,26 +46,30 @@ import cucumber.api.java.en.When
 class Steps {
 	@Given("User navigates to Login page")
 	def navigateToLoginPage() {
-	 
-		WebUI.openBrowser(GlobalVariable.URL)	
+
+		WebUI.openBrowser(GlobalVariable.URL)
 		WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/a_Make Appointment'))
- 
 	}
 
 	@When("User enters (.*) and (.*)")
 	def enterUsername(String username, String password) {
 		WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Username_username'), username)
 		WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), password)
-		
 	}
 
-	@And("clicks on login button") 
+	@And("clicks on login button")
 	def Click() {
 		WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 	}
 	@Then("user is navigated to home page")
 	def homepage() {
-		
+
 		println("Login successfull")
+	}
+
+	@Then("Error message is displayed")
+	def Loginerror() {
+
+		WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/Login error'), "Login failed! Please ensure the username and password are valid.")
 	}
 }

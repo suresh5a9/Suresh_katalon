@@ -27,9 +27,21 @@ WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/inp
 
 WebUI.setEncryptedText(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Password_password'), 'g3/DOGG74jC3Flrr3yH+3D/yKbOqqUNM')
 
-WebUI.verifyElementPresent(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'), 0)
-
 WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Login'))
 
-WebUI.acceptAlert()
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Apply for hospital readmission_hospit_63901f'))
+
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/input_Visit Date (Required)_visit_date'))
+
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/td_19'))
+
+WebUI.setText(findTestObject('Object Repository/Page_CURA Healthcare Service/textarea_Comment_comment'), 'appointment')
+
+WebUI.click(findTestObject('Object Repository/Page_CURA Healthcare Service/button_Book Appointment'))
+
+WebUI.verifyElementText(findTestObject('Object Repository/Page_CURA Healthcare Service/h2_Appointment Confirmation'), 'Appointment Confirmation')
+
+WebUI.takeScreenshotAsCheckpoint('Registration-confirm')
+
+WebUI.closeBrowser()
 
